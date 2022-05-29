@@ -1,0 +1,105 @@
+this is require to install package
+composer init
+then put render name
+then put discription
+now put authior name
+now click enter because of default stability
+again click enter because of default stability
+again click enter because of default stability
+now enter n(means no)
+now enter n(means no)
+now enter y(mrans yes)
+conform y
+
+the following commnads are the basic commnads for composer :-
+1-composer --config list
+if you want to change the name of composer
+2-composer config name
+if you want to delet the discription of composer
+3-composer config --unset discription(to remove the discription)
+this command edit the composer into text editor:-
+4-composer config --editor
+5-composer config --global --editor
+this command is used to making package
+6-composer require venderName/packageName
+6-composer require venderName/packageName:version
+7-composer require venderName/packageName dev --master
+7-composer require venderName/packageName dev 
+8-composer create
+this command is used to remove package
+9-cmposer remove venderName/packageName
+10-composer install(its working great for teamwork because all the persons work at the same versions)
+*-composer update venderName/packageName (it update to the latest version)(this commnad intall the version
+which is written in composer.lock file but when composer.lock file is not 
+present then composer.json file version install)
+this commnad is used to list the availbale packages which is presented in your project:-
+11-composer show
+12-composer show venderName/packageName (this command show the details of the particular package)
+13-composer clear-cache
+14-composer show --name-only
+15-composer show --tree
+16-composer create-project venderName/packageName
+
+To find the name of the composer:-
+18-composer show --name-only
+you can put this code into composer.json
+{
+    "autoload":{
+        "file":[
+            "filepath",
+            "filepath"
+        ],
+        "classmap":[
+            "filepath",
+            "filepath"
+        ],
+
+        "exclude-from-classmap"(this code means you can include any file except these file   ):[
+            "filepath",
+            "filepath"
+        ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "autoload":{
+        "psr-4":[
+            "name\\spacename\\":"path/Name",
+            "name\\spacename\\":"path/Name",
+            
+        ],
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+This is autoload your files
+17-composer dump-autoload(may be this correct)
+17-composer dumpautoload(may be this correct)
+
+TO CREATE PROJECT FROM COMPOSER:-
+composer create-project venderName/packageName projectName version(optional)
+
+
+
